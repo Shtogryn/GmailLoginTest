@@ -27,8 +27,7 @@ public class GmailLoginTest extends BaseTest {
     public void loginTest() throws IOException, InterruptedException {
         appiumDriver.findElement(By.id("identifierId")).sendKeys("tom.shtogryn.2004");
         appiumDriver.findElement(By.id("identifierNext")).click();
-       appiumDriver.findElement(By.id("identifierId")).sendKeys("krypton.mobile.demo");
-        appiumDriver.findElement(By.id("identifierNext")).click();
+       
 
         appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).click();
         appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).sendKeys("mobile.demo");
